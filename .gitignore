@@ -1,0 +1,41 @@
+# --- 전용 빌드 및 컴파일 아티팩트 ---
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.su
+
+# --- CLion 및 CMake 관련 ---
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+cmake_install.cmake
+*.cmake
+
+# --- IDE 및 에디터 설정 ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.settings/
+.project
+.cproject
+
+# --- OS 관련 (맥/윈도우 혼용 시 필수) ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+Thumbs.db
+desktop.ini
+
+# --- STM32CubeMX 관련 ---
+# .ioc 파일은 반드시 포함해야 하지만, 로컬 경로가 포함된 설정 파일은 무시하는 것이 좋습니다.
+mxproject
